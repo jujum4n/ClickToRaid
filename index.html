@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))
+{
+<meta name="viewport" content="width=device-width, initial-scale=.56, maximum-scale=1, user-scalable=0"/>
+}
+if((navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPad Mini/i)))
+{
+    <meta name="viewport" content="width=device-width, initial-scale=.80, maximum-scale=1, user-scalable=0"/>
+}
+</script>
+<head><title id="headtitle">[0:DKP] - [0:Gold]</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content=" user-scalable=0;"> 
+</head>
+<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/kickstart.js"></script>  
+<script type="text/javascript" src="js/paper.js"></script>
+<script type="text/javascript" src="js/stopwatch.js"></script>
+<script type="text/javascript" src="js/ponder.js"></script>
+<body id="body">
+<div style='color:white; size: 36px;background-color:grey;width:100%; height:45px; padding:5px'>
+<div style="float:left">Click to Raid Beta - V0.1 By: Justin Chase</div> <div align="center" style="color:white;text-align:center;-webkit-user-select: text;-moz-user-select: text;-ms-user-select: text;"><b style="color:white" id="ponder"></b><b style="color:white"> - </b><b style="color:white" id="dragonname"></b>
+<form onselectstart="return false;" style="float:right;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input onselectstart="return false;" style="display: none;"type="hidden" name="cmd" value="_s-xclick">
+<input onselectstart="return false;" style="display: none;"type="hidden" name="hosted_button_id" value="L8DKZJ4ELC8E6">
+<input onselectstart="return false;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form></div>
+
+</div>
+<div style='padding:4px;'>
+<img id="1m" src="images/mercs/t1ps.png" style="display: none;" width="63" height="58"></img>
+<img id="2m" src="images/mercs/t2ps.png" style="display: none;" width="50" height="91"></img>
+<img id="0" src="images/monsters/0.png" style="display: none;" width="42" height="36"></img>
+<img id="1" src="images/monsters/1.png" style="display: none;" width="100" height="100"></img>
+<img id="2" src="images/monsters/2.png" style="display: none;" width="100" height="100"></img>
+<img id="3" src="images/monsters/3.png" style="display: none;" width="100" height="100"></img>
+<img id="4" src="images/monsters/4.png" style="display: none;" width="100" height="100"></img>
+<img id="5" src="images/monsters/5.png" style="display: none;" width="100" height="100"></img>
+<img id="6" src="images/monsters/6.png" style="display: none;" width="100" height="100"></img>
+<img id="7" src="images/monsters/7.png" style="display: none;" width="100" height="100"></img>
+<img id="8" src="images/monsters/8.png" style="display: none;" width="100" height="100"></img>
+<img id="9" src="images/monsters/9.png" style="display: none;" width="100" height="100"></img>
+<img id="10" src="images/monsters/10.png" style="display: none;" width="100" height="100"></img>
+<img id="11" src="images/monsters/11.png" style="display: none;" width="140" height="107"></img>
+<img id="12" src="images/monsters/12.png" style="display: none;" width="96" height="110"></img>
+<img id="13" src="images/monsters/13.png" style="display: none;" width="61" height="69"></img>
+<img id="14" src="images/monsters/14.png" style="display: none;" width="181" height="81"></img>
+<img id="15" src="images/monsters/15.png" style="display: none;" width="97" height="101"></img>
+<img id="16" src="images/monsters/16.png" style="display: none;" width="185" height="109"></img>
+<img id="17" src="images/monsters/17.png" style="display: none;" width="57" height="81"></img>
+<img id="18" src="images/monsters/18.png" style="display: none;" width="69" height="105"></img>
+<img id="19" src="images/monsters/19.png" style="display: none;" width="61" height="81"></img>
+<img id="20" src="images/monsters/20.png" style="display: none;" width="73" height="113"></img>
+<img id="21" src="images/monsters/21.png" style="display: none;" width="105" height="97"></img>
+<img id="22" src="images/monsters/22.png" style="display: none;" width="91" height="42"></img>
+<img id="23" src="images/monsters/23.png" style="display: none;" width="59" height="85"></img>
+<img id="24" src="images/monsters/24.png" style="display: none;" width="78" height="83"></img>
+<img id="25" src="images/monsters/25.png" style="display: none;" width="61" height="64"></img>
+<img id="26" src="images/monsters/26.png" style="display: none;" width="55" height="50"></img>
+<img id="27" src="images/monsters/27.png" style="display: none;" width="36" height="46"></img>
+<img id="28" src="images/monsters/28.png" style="display: none;" width="70" height="132"></img>
+<img id="29" src="images/monsters/29.png" style="display: none;" width="52" height="55"></img>
+<img id="30" src="images/monsters/30.png" style="display: none;" width="71" height="55"></img>
+<img id="31" src="images/monsters/31.png" style="display: none;" width="35" height="49"></img>
+<img id="32" src="images/monsters/32.png" style="display: none;" width="67" height="47"></img>
+<img id="33" src="images/monsters/33.png" style="display: none;" width="52" height="57"></img>
+<img id="34" src="images/monsters/34.png" style="display: none;" width="56" height="49"></img>
+<img id="35" src="images/monsters/35.png" style="display: none;" width="53" height="41"></img>
+<img id="36" src="images/monsters/36.png" style="display: none;" width="71" height="83"></img>
+<img id="37" src="images/monsters/37.png" style="display: none;" width="28" height="32"></img>
+<img id="38" src="images/monsters/38.png" style="display: none;" width="45" height="41"></img>
+<img id="39" src="images/monsters/39.png" style="display: none;" width="36" height="40"></img>
+<img id="40" src="images/monsters/40.png" style="display: none;" width="38" height="46"></img>
+<img id="41" src="images/monsters/41.png" style="display: none;" width="31" height="27"></img>
+<img id="42" src="images/monsters/42.png" style="display: none;" width="47" height="43"></img>
+<img id="43" src="images/monsters/43.png" style="display: none;" width="50" height="43"></img>
+<img id="44" src="images/monsters/44.png" style="display: none;" width="51" height="50"></img>
+<img id="45" src="images/monsters/45.png" style="display: none;" width="48" height="50"></img>
+<img id="46" src="images/monsters/46.png" style="display: none;" width="48" height="50"></img>
+<img id="47" src="images/monsters/47.png" style="display: none;" width="50" height="50"></img>
+<img id="s1" src="images/spells/1c.png" style="display: none;" width="50" height="50"></img>
+<img id="s2" src="images/spells/2c.png" style="display: none;" width="50" height="50"></img>
+<img id="s3" src="images/spells/1bdot.png" style="display: none;" width="50" height="50"></img>
+<img id="gold" src="images/items/gold.png" style="display: none;" width="18" height="21"></img>
+<img id="dkp" src="images/items/2dkp.jpg" style="display: none;" width="31" height="30"></img>
+<img id="smallcastle" src="images/castle/smallcastle.png" style="display: none;" width="100" height="100"></img>
+<img id="tallcastle" src="images/castle/tallcastle.png" style="display: none;" width="31" height="95"></img>
+<img id="btallcastle" src="images/castle/btallcastle.png" style="display: none;" width="31" height="95"></img>
+<img id="midcastle" src="images/castle/midcastle.png" style="display: none;" width="63" height="60"></img>
+<img id="flipmidcastle" src="images/castle/flipmidcastle.png" style="display: none;" width="63" height="60"></img>
+
+<progress style="position:absolute;left:298px; top:233px;" id="prog" value="0" max="0"></progress>
+
+<div align="left">
+<canvas id="scoreCanvas" width="280" height="200" style="border-style:inset; border-width:5px;background:url(images/bgs/spellback.jpg); border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag. - Jujuman suggests you use Google Chrome
+</canvas>
+<canvas id="myCanvas" width="389" height="200" style="border:1px solid #d3d3d3; background:url(images/bgs/bg2.jpg)">
+    Your browser does not support the HTML5 canvas tag. - Jujuman suggests you use Google Chrome
+</canvas>
+<canvas id="talentCanvas" width="270" height="200" style="border:1px solid #d3d3d3;background:url(images/bgs/spellback.jpg)">
+    Your browser does not support the HTML5 canvas tag. - Jujuman suggests you use Google Chrome
+</canvas>
+<br>
+<canvas id="turretCanvas" width="675" height="200" style="background:url(images/bgs/bg3.jpg); border:1px solid #d3d3d3">
+    Your browser does not support the HTML5 canvas tag. - Jujuman suggests you use Google Chrome
+</canvas>
+<canvas id="testCanvas" width="270" height="200" style="border:1px solid #d3d3d3; background:url(images/bgs/sky2.jpg)">
+    Your browser does not support the HTML5 canvas tag. - Jujuman suggests you use Google Chrome
+</canvas>
+</div>
+</div>
+
+<script type="text/paperscript" canvas="testCanvas">
+//Setup the Castle Test/Casle Canvas
+var realpaper = new paper.PaperScope();
+var ctcanvas = document.getElementById('turretCanvas');
+// Create an empty project and a view for the canvas:
+realpaper.setup(ctcanvas);
+var goblinwarriorraster = new realpaper.Raster('1m');
+var arcanewizardraster = new realpaper.Raster('2m');
+
+    goblinwarriorraster.position=new realpaper.Point(40, 156);
+    goblinwarriorraster.opacity=(.25);
+    
+    arcanewizardraster.position=new realpaper.Point(115, 150);
+    arcanewizardraster.opacity=(.25);
+
+var goblinwarriorpath=goblinwarriorraster;
+var arcanewizardpath=arcanewizardraster;
+
+goblinwarriorpath.onClick = function(event) 
+{
+    if(DKP>=goblinwarriorcost)
+    {
+        DKP=DKP-goblinwarriorcost;
+        goblinwarriorcost+=2;
+        totalgoblinmercs++;
+        if(DKP < goblinwarriorcost)
+        {
+            this.selectedColor='red';
+            goblinwarriorraster.opacity = 0.25;
+            domydraw(c);
+        }
+        else
+        {
+            goblinwarriorraster.opacity = 1;
+            domydraw(c);
+        }
+    }
+}
+
+goblinwarriorpath.onFrame = function(event) 
+{
+    if(DKP < goblinwarriorcost)
+    {
+        goblinwarriorraster.opacity = 0.25;
+    }
+    else
+    {
+        goblinwarriorraster.opacity = 1;
+    }
+}
+arcanewizardpath.onClick = function(event) 
+{
+    if(DKP>=arcanewizardcost)
+    {
+        DKP=DKP-arcanewizardcost;
+        arcanewizardcost+=2;
+        totalarcanewizards++;
+        if(DKP < arcanewizardcost)
+        {
+            arcanewizardraster.opacity = 0.25;
+            domydraw(c);
+        }
+        else
+        {
+            arcanewizardraster.opacity = 1;
+            domydraw(c);
+        }
+    }
+}
+arcanewizardpath.onFrame = function(event) 
+{
+    if(DKP >= arcanewizardcost)
+    {
+        arcanewizardraster.opacity = 1;
+    }
+    else
+    {
+        arcanewizardraster.opacity = 0.25;
+    }
+}
+
+//Setup the Castle Test/Casle Canvas
+var spaper = new paper.PaperScope();
+var ccanvas = document.getElementById('testCanvas');
+// Create an empty project and a view for the canvas:
+spaper.setup(ccanvas);
+
+// Get a reference to the castle and canvas object
+var smallcastleraster = new spaper.Raster('smallcastle');
+var ssmallcastleraster = new spaper.Raster('smallcastle');
+var midcastleraster = new spaper.Raster('midcastle');
+var tallcastleraster = new spaper.Raster('tallcastle');
+var btallcastleraster = new spaper.Raster('btallcastle');
+var sbtallcastleraster = new spaper.Raster('btallcastle');
+var flipmidcastleraster = new spaper.Raster('flipmidcastle');
+
+smallcastleraster.position=new spaper.Point(20, 166);
+if(smallcastleowned==0)
+{
+    smallcastleraster.opacity=(.25);
+}
+else
+{
+    var text = new PointText({
+	point: [10, 20],
+	content: '+2 Gold per kill',
+	fillColor: 'black',
+	fontSize: 16
+    });
+    smallcastleraster.opacity=(1);
+}
+
+btallcastleraster.position=new spaper.Point(47, 156);
+if(btallcastleowned==0)
+{
+    btallcastleraster.opacity=(.25);
+}
+else
+{
+    var text = new PointText({
+	point: [10, 40],
+	content: '+1 base DPS for Tesin',
+	fillColor: 'black',
+	fontSize: 16
+    });
+    btallcastleraster.opacity=(1);
+}
+
+midcastleraster.position=new spaper.Point(88, 171);
+if(midcastleowned==0)
+{
+    midcastleraster.opacity=(.25);
+}
+else
+{
+    var text = new PointText({
+	point: [10, 60],
+	content: '+2 base DPS for Gorsh',
+	fillColor: 'black',
+	fontSize: 16
+    });
+    midcastleraster.opacity=(1);
+}
+
+flipmidcastleraster.position=new spaper.Point(178, 171);
+if(flipmidcastleowned==0)
+{
+    flipmidcastleraster.opacity=(.25);
+}
+else
+{
+    flipmidcastleraster.opacity=(1);
+}
+
+tallcastleraster.position=new spaper.Point(133, 156);
+if(tallcastleowned==0)
+{
+    tallcastleraster.opacity=(.25);
+}
+else
+{
+    tallcastleraster.opacity=(1);
+}
+
+ssmallcastleraster.position=new spaper.Point(221, 167);
+if(ssmallcastleowned==0)
+{
+    ssmallcastleraster.opacity=(.25);
+}
+else
+{
+    ssmallcastleraster.opacity=(1);
+}
+
+sbtallcastleraster.position=new spaper.Point(249, 154);
+if(sbtallcastleowned==0)
+{
+    sbtallcastleraster.opacity=(.25);
+}
+else
+{
+    sbtallcastleraster.opacity=(1);
+}
+
+var smallcastlepath=smallcastleraster;
+var ssmallcastlepath=ssmallcastleraster;
+var tallcastlepath=tallcastleraster;
+var btallcastlepath=btallcastleraster;
+var sbtallcastlepath=sbtallcastleraster;
+var midcastlepath=midcastleraster;
+var flipmidcastlepath=flipmidcastleraster;
+
+var remgoldtext = new PointText({
+point: [10, 20],
+content: '',
+fillColor: 'black',
+fontSize: 16
+});
+
+smallcastlepath.onClick = function(event) 
+{
+    if(gold>=smallcastlecost && smallcastleowned!=1)
+    {
+        smallcastleowned+=1;
+        gold=gold-smallcastlecost;
+        smallcastleraster.opacity = 1;
+        remgoldtext.content='+2 Gold per kill';
+        domydraw(c);
+    }
+}
+smallcastlepath.onMouseEnter = function(event)
+{
+    if(gold>=smallcastlecost && smallcastleowned!=1)
+    {
+        smallcastleraster.opacity=1;
+        remgoldtext.content='[10Gold] +2 Gold per kill';
+    }
+}
+smallcastlepath.onMouseLeave = function(event)
+{
+    if(smallcastleowned!=1)
+    {
+        remgoldtext.content='';
+        smallcastleraster.opacity=.25;
+    }
+}
+
+ssmallcastlepath.onMouseEnter = function(event)
+{
+    if(gold>=ssmallcastlecost && ssmallcastleowned!=1)
+    {
+        ssmallcastleraster.opacity=1;
+    }
+}
+ssmallcastlepath.onMouseLeave = function(event)
+{
+    if(ssmallcastleowned!=1)
+    {
+        ssmallcastleraster.opacity=.25;
+    }
+}
+ssmallcastlepath.onClick = function(event) 
+{
+    if(gold>=ssmallcastlecost && ssmallcastleowned!=1)
+    {
+        ssmallcastleowned+=1;
+        gold=gold-ssmallcastlecost;
+        ssmallcastleraster.opacity = 1;
+        domydraw(c);
+    }
+}
+
+var dtext = new PointText({
+point: [10, 60],
+content: '',
+fillColor: 'black',
+fontSize: 16
+});
+midcastlepath.onMouseEnter = function(event)
+{
+    if(gold>=midcastlecost && midcastleowned!=1)
+    {
+        dtext.content='[100Gold] +2 base DPS for Gorsh';
+        midcastleraster.opacity=1;
+    }
+}
+midcastlepath.onMouseLeave = function(event)
+{
+    if(midcastleowned!=1)
+    {
+        midcastleraster.opacity=.25;
+        dtext.content='';
+    }
+}
+midcastlepath.onClick = function(event) 
+{
+    if(gold>=midcastlecost && midcastleowned!=1)
+    {
+        midcastleowned+=1;
+        gold=gold-midcastlecost;
+        midcastleraster.opacity = 1;
+        dtext.content='+2 base DPS for Gorsh';
+        domydraw(c);
+    }
+}
+
+var arctext = new PointText({
+point: [10, 40],
+content: '',
+fillColor: 'black',
+fontSize: 16
+});
+tallcastlepath.onMouseEnter = function(event)
+{
+    if(gold>=tallcastlecost && tallcastleowned!=1)
+    {
+        tallcastleraster.opacity=1;
+    }
+}
+tallcastlepath.onMouseLeave = function(event)
+{
+    if(tallcastleowned!=1)
+    {
+        tallcastleraster.opacity=.25;
+    }
+}
+
+tallcastlepath.onClick = function(event) 
+{
+    if(gold>=tallcastlecost && tallcastleowned!=1)
+    {
+       tallcastleowned+=1;
+        gold=gold-tallcastlecost;
+        tallcastleraster.opacity = 1;
+        domydraw(c);
+    }
+}
+
+btallcastlepath.onMouseEnter = function(event)
+{
+    if(gold>=btallcastlecost && btallcastleowned!=1)
+    {
+        btallcastleraster.opacity=1;
+        arctext.content='[50Gold] +1 base DPS for Tesin';
+    }
+}
+btallcastlepath.onMouseLeave = function(event)
+{
+    if(btallcastleowned!=1)
+    {
+        btallcastleraster.opacity=.25;
+        arctext.content='';
+    }
+}
+
+btallcastlepath.onClick = function(event) 
+{
+    if(gold>=btallcastlecost && btallcastleowned!=1)
+    {
+        btallcastleowned+=1;
+        arctext.content='+1 base DPS for Tesin';
+        gold=gold-btallcastlecost;
+        btallcastleraster.opacity = 1;
+        domydraw(c);
+    }
+}
+
+sbtallcastlepath.onMouseEnter = function(event)
+{
+    if(gold>=sbtallcastlecost && sbtallcastleowned!=1)
+    {
+        sbtallcastleraster.opacity=1;
+    }
+}
+
+sbtallcastlepath.onMouseLeave = function(event)
+{
+    if(sbtallcastleowned!=1)
+    {
+        sbtallcastleraster.opacity=.25;
+    }
+}
+
+sbtallcastlepath.onClick = function(event) 
+{
+    if(gold>=sbtallcastlecost && sbtallcastleowned!=1)
+    {
+        sbtallcastleowned+=1;
+        gold=gold-sbtallcastlecost;
+        sbtallcastleraster.opacity = 1;
+        domydraw(c);
+    }
+}
+
+flipmidcastlepath.onMouseEnter = function(event)
+{
+    if(gold>=flipmidcastlecost && flipmidcastleowned!=1)
+    {
+        flipmidcastleraster.opacity=1;
+    }
+}
+
+flipmidcastlepath.onMouseLeave = function(event)
+{
+    if(flipmidcastleowned!=1)
+    {
+        flipmidcastleraster.opacity=.25;
+    }
+}
+
+flipmidcastlepath.onClick = function(event) 
+{
+    if(gold>=flipmidcastlecost && flipmidcastleowned!=1)
+    {
+        flipmidcastleowned+=1;
+        gold=gold-flipmidcastlecost;
+        flipmidcastleraster.opacity = 1;
+        domydraw(c);
+    }
+}
+
+
+</script>
+<script>
+
+//Ctrl + a Disabled Function
+$(function(){   
+    $(document).keydown(function(objEvent) {        
+        if (objEvent.ctrlKey) {          
+            if (objEvent.keyCode == 65) {                         
+                objEvent.disableTextSelect();
+                return false;
+            }            
+        }        
+    });
+});
+
+var smallcastleowned=0;
+var smallcastlecost=10;
+var btallcastleowned=0;
+var btallcastlecost=50;
+var midcastleowned=0;
+var midcastlecost=100;
+var tallcastleowned=0;
+var tallcastlecost=200;
+var flipmidcastleowned=0;
+var flipmidcastlecost=400;
+var ssmallcastleowned=0;
+var ssmallcastlecost=800;
+var sbtallcastleowned=0;
+var sbtallcastlecost=1600;
+var btallcastlebonus=0;
+var midcastlebonus=0;
+
+//Variable Declaration
+var lastdragonimgtag;
+var dragonname;
+var dragonimgtag;
+var imagenumber=3;
+var curhealth=10;
+var DKPMAX=1;
+var health=10*DKPMAX;
+var tickle=0;
+var DKP=0;
+var clickremover=1;
+var clickbonus=1;
+var sc=0;
+var swordcost=1;
+var multistrikecost=1;
+var multistrike=0;
+var goblinwarriorcost=1;
+var totalgoblinmercs=0;
+var amountLoaded = 0;
+var totalarcanewizards=0;
+var arcanewizardcost=1;
+var grimharvestcost=10;
+var grimharvestmultiplier=1;
+var DSLAIN=0;
+var goblindamage=2;
+var ovrgoblindamage=2;
+var ovrwizarddamge=1;
+var wizarddamage=1;
+var rhealth=10*DKPMAX;
+var broadswordtotal=0;
+var curtime=0;
+var quotename;
+var quote;
+var gold=250;
+var myWatch = new Stopwatch(); myWatch.start();
+var c = document.getElementById("myCanvas");
+var sc =document.getElementById("scoreCanvas");
+var talc =document.getElementById("talentCanvas");
+loadsave();
+c.addEventListener("click", removeLife, false);
+document.addEventListener('touchstart',removeLife, false);
+function debuginfo()
+{
+    console.log("smallcastleowned:"+smallcastleowned);
+    console.log("smallcastlecost:"+smallcastlecost);
+    console.log("btallcastleowned:"+btallcastleowned);
+    console.log("btallcastlecost:"+btallcastlecost);
+    console.log("midcastleowned:"+midcastleowned);
+    console.log("midcastlecost:"+midcastlecost);
+    console.log("tallcastleowned:"+tallcastleowned);
+    console.log("tallcastlecost:"+tallcastlecost);
+    console.log("flipmidcastleowned:"+flipmidcastleowned);
+    console.log("flipmidcastlecost:"+flipmidcastlecost);
+    console.log("ssmallcastleowned:"+ssmallcastleowned);
+    console.log("ssmallcastlecost:"+ssmallcastlecost);
+    console.log("sbtallcastleowned:"+sbtallcastleowned);
+    console.log("sbtallcastlebonus:"+sbtallcastlecost);
+    console.log("btallcastlebonus:"+btallcastlebonus);
+    console.log("midcastlebonus:"+midcastlebonus);
+    console.log("lastdragonimgtag:"+lastdragonimgtag);
+    console.log("dragonname:"+dragonname);
+    console.log("dragonimgtag:"+dragonimgtag);
+    console.log("imagenumber:"+imagenumber);
+    console.log("curhealth:"+curhealth);
+    console.log("DKPMAX:"+DKPMAX);
+    console.log("health:"+health);
+    console.log("tickle:"+tickle);
+    console.log("DKP:"+DKP);
+    console.log("clickremover:"+clickremover);
+    console.log("clickbonus:"+clickbonus);
+    console.log("sc:"+sc);
+    console.log("swordcost:"+swordcost);
+    console.log("multistrikecost:"+multistrikecost);
+    console.log("multistrike:"+multistrike);
+    console.log("goblinwarriorcost:"+goblinwarriorcost);
+    console.log("totalgoblinmercs:"+totalgoblinmercs);
+    console.log("amountLoaded:"+amountLoaded);
+    console.log("totalarcanewizards:"+totalarcanewizards);
+    console.log("arcanewizardcost:"+arcanewizardcost);
+    console.log("grimharvestcost:"+grimharvestcost);
+    console.log("grimharvestmultiplier:"+grimharvestmultiplier);
+    console.log("DSLAIN:"+DSLAIN);
+    console.log("goblindamage:"+goblindamage);
+    console.log("ovrgoblindamage:"+ovrgoblindamage);
+    console.log("ovrwizarddamage:"+ovrwizarddamge);
+    console.log("wizarddamge:"+wizarddamage);
+    console.log("rhealth:"+rhealth);
+    console.log("broadswordtotal:"+broadswordtotal);
+    console.log("curtime:"+curtime);
+    console.log("Gold:"+gold);
+    console.log("Stopwatch:"+myWatch);
+    console.log("Canvas Context:"+c);
+    console.log("Score Canvas Context:"+sc);
+    console.log("Talent Canvas Context:"+talc);
+}
+function dragoncollision()
+{
+    if(DSLAIN>=1)
+    {
+        lastdragonimgtag=imagenumber;
+    }
+}
+function newdragon()
+{
+    //Randomly Generate Information for the Dragon
+    var randompic=Math.floor(Math.random()*47);
+    imagenumber=randompic;
+    var randnameprefix=Math.floor(Math.random()*38);
+    var randnamesuffix=Math.floor(Math.random()*90);
+    var dragonnameprefix;
+    var dragonnamesuffix;
+    GetStatement(Math.floor(Math.random()*250));
+    dragoncollision();
+    if(lastdragonimgtag==randompic)
+    {
+        if(randompic==0)
+        {
+            randompic++;
+        }
+        else
+        {
+            randompic--;    
+        }
+    }
+    switch(randompic)
+    {
+        case 0:
+            imagenumber=0;
+            break;
+        case 1:
+            imagenumber=1;
+            break;
+        case 2:
+            imagenumber=2;
+            break;
+        case 3:
+            imagenumber=3;
+            break;
+        case 4:
+            imagenumber=4;
+            break;
+        case 5:
+            imagenumber=5;
+            break;
+        case 6:
+            imagenumber=6;
+            break;
+        case 7:
+            imagenumber=7;
+            break;
+        case 8:
+            imagenumber=8;
+            break;
+        case 9:
+            imagenumber=9;
+            break;
+        case 10:
+            imagenumber=10;
+            break;
+        case 11:
+            imagenumber=11;
+            break;
+        case 12:
+            imagenumber=12;
+            break;
+        case 13:
+            imagenumber=13;
+            break;
+        case 14:
+            imagenumber=14;
+            break;
+        case 15:
+            imagenumber=15;
+            break;
+        case 16:
+            imagenumber=16;
+            break;
+        case 17:
+            imagenumber=17;
+            break;
+        case 18:
+            imagenumber=18;
+            break;
+        case 19:
+            imagenumber=19;
+            break;
+        case 20:
+            imagenumber=20;
+            break;
+        case 21:
+            imagenumber=21;
+            break;
+        case 22:
+            imagenumber=22;
+            break;
+        case 23:
+            imagenumber=23;
+            break;
+        case 24:
+            imagenumber=24;
+            break;
+        case 25:
+            imagenumber=25;
+            break;
+        case 26:
+            imagenumber=26;
+            break;
+        case 27:
+            imagenumber=27;
+            break;
+        case 28:
+            imagenumber=28;
+            break;
+        case 29:
+            imagenumber=29;
+            break;
+        case 30:
+            imagenumber=30;
+            break;
+        case 31:
+            imagenumber=31;
+            break;
+        case 32:
+            imagenumber=32;
+            break;
+        case 33:
+            imagenumber=33;
+            break;
+        case 34:
+            imagenumber=34;
+            break;
+        case 35:
+            imagenumber=35;
+            break;
+        case 36:
+            imagenumber=36;
+            break;
+        case 37:
+            imagenumber=37;
+            break;
+        case 38:
+            imagenumber=38;
+            break;
+        case 39:
+            imagenumber=39;
+            break;
+        case 40:
+            imagenumber=40;
+            break;
+        case 41:
+            imagenumber=41;
+            break;
+        case 42:
+            imagenumber=42;
+            break;
+        case 43:
+            imagenumber=43;
+            break;
+        case 44:
+            imagenumber=44;
+            break;
+        case 45:
+            imagenumber=45;
+            break;
+        case 46:
+            imagenumber=46;
+            break;
+        case 47:
+            imagenumber=47;
+            break;
+    }
+    switch(randnamesuffix)
+    {
+        case 0:
+            dragonnamesuffix="Red Dragon";
+            break;
+        case 1:
+            dragonnamesuffix="Dargon";
+            break;
+        case 2:
+            dragonnamesuffix="Beast";
+            break;
+        case 3:
+            dragonnamesuffix="Zilla";
+            break;
+        case 4:
+            dragonnamesuffix="Kind";
+            break;
+        case 5:
+            dragonnamesuffix="Wizard";
+            break;
+        case 6:
+            dragonnamesuffix="Huelord";
+            break;
+        case 7:
+            dragonnamesuffix="Huemancer";
+            break;
+        case 8:
+            dragonnamesuffix="Dragon Slicer";
+            break;
+        case 9:
+            dragonnamesuffix="Fire Inhaler";
+            break;
+        case 10:
+            dragonnamesuffix="Fire Breather";
+            break;
+        case 11:
+            dragonnamesuffix="Man";
+            break;
+        case 12:
+            dragonnamesuffix="Timelord";
+            break;
+        case 13:
+            dragonnamesuffix="King";
+            break;
+        case 14:
+            dragonnamesuffix="Prince";
+            break;
+        case 15:
+            dragonnamesuffix="Lord";
+            break;
+        case 16:
+            dragonnamesuffix="Czar";
+            break;
+        case 17:
+            dragonnamesuffix="Matrix";
+            break;
+        case 18:
+            dragonnamesuffix="Creator";
+            break;
+        case 19:
+            dragonnamesuffix="Firelord";
+            break;
+        case 20:
+            dragonnamesuffix="Gorgeous";
+            break;
+        case 21:
+            dragonnamesuffix="Knight";
+            break;
+        case 22:
+            dragonnamesuffix="Necromancer";
+            break;
+        case 23:
+            dragonnamesuffix="Arcane Student";
+            break;
+        case 24:
+            dragonnamesuffix="Frost Savage";
+            break;
+        case 25:
+            dragonnamesuffix="Goat Slayer";
+            break;
+        case 26:
+            dragonnamesuffix="Gravewalker";
+            break;
+        case 27:
+            dragonnamesuffix="Ruthless";
+            break;
+        case 28:
+            dragonnamesuffix="Butcher";
+            break;
+        case 29:
+            dragonnamesuffix="Eternal";
+            break;
+        case 30:
+            dragonnamesuffix="Quick";
+            break;
+        case 31:
+            dragonnamesuffix="Farmer";
+            break;
+        case 32:
+            dragonnamesuffix="Exile";
+            break;
+        case 33:
+            dragonnamesuffix="Freemason";
+            break;
+        case 34:
+            dragonnamesuffix="Stonemason";
+            break;
+        case 35:
+            dragonnamesuffix="All Seeing Eye";
+            break;
+        case 36:
+            dragonnamesuffix="Gambler";
+            break;
+        case 37:
+            dragonnamesuffix="Sad";
+            break;
+        case 38:
+            dragonnamesuffix="Happy";
+            break;
+        case 39:
+            dragonnamesuffix="Cosmonaut";
+            break;
+        case 40:
+            dragonnamesuffix="Bandit";
+            break;
+        case 41:
+            dragonnamesuffix="Assassin";
+            break;
+        case 42:
+            dragonnamesuffix="Great One";
+            break;
+        case 43:
+            dragonnamesuffix="Sage";
+            break;
+        case 44:
+            dragonnamesuffix="Corrupt";
+            break;
+        case 45:
+            dragonnamesuffix="Affluent";
+            break;
+        case 46:
+            dragonnamesuffix="Poor";
+            break;
+        case 47:
+            dragonnamesuffix="Selfless";
+            break;
+        case 48:
+            dragonnamesuffix="Precocious";
+            break;
+        case 49:
+            dragonnamesuffix="Mad Scientist";
+            break;
+        case 50:
+            dragonnamesuffix="Conjurer";
+            break;
+        case 51:
+            dragonnamesuffix="Salty";
+            break;
+        case 52:
+            dragonnamesuffix="Sentry";
+            break;
+        case 53:
+            dragonnamesuffix="Godly";
+            break;
+        case 54:
+            dragonnamesuffix="Sneak";
+            break;
+        case 55:
+            dragonnamesuffix="Loyal";
+            break;
+        case 56:
+            dragonnamesuffix="Silly";
+            break;
+        case 57:
+            dragonnamesuffix="Angry";
+            break;
+        case 58:
+            dragonnamesuffix="Princess";
+            break;
+        case 59:
+            dragonnamesuffix="Fairy Lord";
+            break;
+        case 60:
+            dragonnamesuffix="Merciful";
+            break;
+        case 61:
+            dragonnamesuffix="Insane";
+            break;
+        case 62:
+            dragonnamesuffix="Fire Dancer";
+            break;
+        case 63:
+            dragonnamesuffix="Swordsman";
+            break;
+        case 64:
+            dragonnamesuffix="Princess";
+            break;
+        case 65:
+            dragonnamesuffix="Divine";
+            break;
+        case 66:
+            dragonnamesuffix="Gold Dragon";
+            break;
+        case 67:
+            dragonnamesuffix="Silver Dragon";
+            break;
+        case 68:
+            dragonnamesuffix="Zealot";
+            break;
+        case 69:
+            dragonnamesuffix="Crusher";
+            break;
+        case 70:
+            dragonnamesuffix="Strong";
+            break;
+        case 71:
+            dragonnamesuffix="Brave";
+            break;
+        case 72:
+            dragonnamesuffix="Glutton";
+            break;
+        case 73:
+            dragonnamesuffix="Orange";
+            break;
+        case 74:
+            dragonnamesuffix="Lost";
+            break;
+        case 75:
+            dragonnamesuffix="Time Traveler";
+            break;
+        case 76:
+            dragonnamesuffix="Construct";
+            break;
+        case 77:
+            dragonnamesuffix="Automater";
+            break;
+        case 78:
+            dragonnamesuffix="Bleak";
+            break;
+        case 79:
+            dragonnamesuffix="Dark Lord";
+            break;
+        case 80:
+            dragonnamesuffix="Cleric";
+            break;
+        case 81:
+            dragonnamesuffix="Recalcitrant";
+            break;
+        case 82:
+            dragonnamesuffix="Defiant";
+            break;
+        case 83:
+            dragonnamesuffix="Difficult";
+            break;
+        case 84:
+            dragonnamesuffix="Contrary";
+            break;
+        case 85:
+            dragonnamesuffix="Agressive";
+            break;
+        case 86:
+            dragonnamesuffix="Belligerent";
+            break;
+        case 87:
+            dragonnamesuffix="Uncooperative";
+            break;
+        case 88:
+            dragonnamesuffix="Headstrong";
+            break;
+        case 89:
+            dragonnamesuffix="Argumentative";
+            break;
+        case 90:
+            dragonnamesuffix="Quarrelsome";
+            break;
+    }
+    switch(randnameprefix)
+    {
+        case 0:
+            dragonnameprefix="Juju the ";
+            break;
+        case 1:
+            dragonnameprefix="Lazybones the ";
+            break;
+        case 2:
+            dragonnameprefix="Killara the ";
+            break;
+        case 3:
+            dragonnameprefix="Splat the ";
+            break;
+        case 4:
+            dragonnameprefix="Backbeard the ";
+            break;
+        case 5:
+            dragonnameprefix="Xritam the ";
+            break;
+        case 6:
+            dragonnameprefix="Alijha the ";
+            break;
+        case 7:
+            dragonnameprefix="Mellie the ";
+            break;
+        case 8:
+            dragonnameprefix="Stock the ";
+            break;
+        case 9:
+            dragonnameprefix="Lulu the ";
+            break;
+        case 10:
+            dragonnameprefix="Lucy the ";
+            break;
+        case 11:
+            dragonnameprefix="Amber the ";
+            break;
+        case 12:
+            dragonnameprefix="Olive the ";
+            break;
+        case 13:
+            dragonnameprefix="Winsome the ";
+            break;
+        case 14:
+            dragonnameprefix="Jordan the ";
+            break;
+        case 15:
+            dragonnameprefix="Weazy the ";
+            break;
+        case 16:
+            dragonnameprefix="Cato the ";
+            break;
+        case 17:
+            dragonnameprefix="Stonehewer the ";
+            break;
+        case 18:
+            dragonnameprefix="Jehuty the ";
+            break;
+        case 19:
+            dragonnameprefix="Lousybanes the ";
+            break;
+        case 20:
+            dragonnameprefix="Grover the ";
+            break;
+        case 21:
+            dragonnameprefix="Skrill the ";
+            break;
+        case 22:
+            dragonnameprefix="Scooter the ";
+            break;
+        case 23:
+            dragonnameprefix="Softcactus the ";
+            break;
+        case 24:
+            dragonnameprefix="Pat the ";
+            break;
+        case 25:
+            dragonnameprefix="David the ";
+            break;
+        case 26:
+            dragonnameprefix="Gerson the ";
+            break;
+        case 27:
+            dragonnameprefix="Collin the ";
+            break;
+        case 28:
+            dragonnameprefix="Sam the ";
+            break;
+        case 29:
+            dragonnameprefix="Ony the ";
+            break;
+        case 30:
+            dragonnameprefix="Crystal the ";
+            break;
+        case 31:
+            dragonnameprefix="Salt the ";
+            break;
+        case 32:
+            dragonnameprefix="Justin the ";
+            break;
+        case 33:
+            dragonnameprefix="Rensen the ";
+            break;
+        case 34:
+            dragonnameprefix="Jeen the ";
+            break;
+        case 35:
+            dragonnameprefix="Farzam the ";
+            break;
+        case 36:
+            dragonnameprefix="Le the ";
+            break;
+        case 37:
+            dragonnameprefix="Rudy the ";
+            break;
+        case 38:
+            dragonnameprefix="Kynan the ";
+            break;
+    }
+    dragonname=dragonnameprefix+dragonnamesuffix;
+    document.getElementById("dragonname").innerHTML=dragonname;
+}
+function cleanupcanvas()
+{
+    c.width = c.width;
+    sc.width = sc.width;
+    talc.width= talc.width;
+}
+
+function domydraw(c)
+{
+    document.title="["+DKP +":DKP] - ["+ gold + ":Gold]";
+    cleanupcanvas();
+    /*
+    talcctx.fillText("Total Damage: "+ clickbonus,6, 164);
+    talcctx.fillText("Number of Attacks: "+ (multistrike + 1),6, 180);
+    talcctx.fillText("Damage Per Swing: "+ ((multistrike + 1)*clickbonus),6, 196);
+    */
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#000000";
+    var cat = document.getElementById(imagenumber);
+    ctx.drawImage(cat, 20, 57);
+    
+    ctx.fillStyle="#FFFFFF";
+    var stac = document.getElementById("1m");
+    if(totalgoblinmercs>0)
+    {
+        if(midcastleowned==1 && midcastlebonus==0)
+        {
+            midcastlebonus=1;
+            goblindamage+=2;
+        }
+        ctx.fillText("Level: "+ totalgoblinmercs,298,132);
+        ctx.drawImage(stac, 280, 136, 63, 58);
+        ctx.fillText("DPS: "+ (totalgoblinmercs * goblindamage),338,190);
+    }
+    var stacx = document.getElementById("2m");
+    if(totalarcanewizards>0)
+    {
+        if(btallcastleowned==1 && btallcastlebonus==0)
+        {
+            btallcastlebonus=1;
+            wizarddamage+=1;
+        }
+        ctx.fillText("Level: " + totalarcanewizards,298,35);
+        ctx.drawImage(stacx, 286, 21, 50, 91);
+        ctx.fillText("DPS: "+ (totalarcanewizards * wizarddamage),338,101);
+    }
+    ctx.fillStyle="#000000";
+    var sctx=sc.getContext("2d");
+    ctx.font="24px Arial";
+    ctx.fillStyle='white';
+    ctx.fillText(dragonname,10,24);
+    sctx.font="16px Arial";
+    ctx.fillText("Health:"+curhealth,8,180);
+    prog.value = curhealth;
+    prog.max= rhealth;
+    ctx.font="18px Arial";
+    ctx.fillStyle='black';
+
+    sctx.font="24px Arial";
+    var stacxz = document.getElementById("dkp");
+    sctx.drawImage(stacxz, 4, 158, 16, 16);
+    sctx.fillText("DKP: "+ DKP,24, 174);
+    sctx.fillText("Gold: "+ gold,24, 194);
+    var stacxz = document.getElementById("gold");
+    sctx.drawImage(stacxz, 1, 176, 24, 24);
+    sctx.font="18px Arial";
+    var e = myWatch.getElapsed();
+    sctx.fillText("Uptime: " + e.hours + "h "+e.minutes+"m "+e.seconds+"s ", 10,64);
+    sctx.fillText("Total DKP: "+ (DKPMAX-1),10, 24);
+    sctx.fillText("Total Kills: "+ DSLAIN, 10, 44);
+    sctx.fillText("DKP/s: " + Math.round(100*((DKPMAX-1)/curtime))/100 ,10, 84);
+    sctx.fillText("Kills/s: " + Math.round(100*((DSLAIN)/curtime))/100 ,10, 104);
+}
+function removeLife(e) 
+{
+    if(curhealth==1 || curhealth >1)
+    {
+        for (var i=0; i<=multistrike; i++)
+        {  
+            curhealth=curhealth-clickbonus
+            if(curhealth<0)
+            {
+                curhealth=0;
+            }
+            domydraw(c);
+        }
+    }
+}
+function tick()
+{
+    var tickledamage=tickle+(totalgoblinmercs * goblindamage)/*(multistrike+1)*/ + (totalarcanewizards * wizarddamage)/*(multistrike+1)*/;
+
+    if(curhealth-tickledamage>0)
+    {
+        curtime=curtime+1;
+        curhealth=(curhealth)-tickledamage;
+        setTimeout(function() {tick() }, 1000);
+        domydraw(c);
+    }
+    else
+    {
+        curhealth=0;
+        DKP+=(grimharvestmultiplier);
+        document.title="["+DKP +":DKP] - ["+ gold + ":Gold]";
+        domydraw(c);
+        var sctx=sc.getContext("2d");
+        sctx.font="24px Arial";
+        sctx.fillText("DKP:"+ DKP,10, 24);
+        newdragon();
+        DKPMAX+=(grimharvestmultiplier);
+        DSLAIN+=1;
+        curhealth=health*DKPMAX;
+        rhealth=health*DKPMAX;
+        gold=gold+(Math.floor(Math.random()*curhealth)/10);
+        gold=Math.round((gold)/1);
+        if(smallcastleowned==1)
+        {
+            gold+=2;
+        }
+        debuginfo();
+        savevars();
+        domydraw(c);
+        tick();
+    }
+}
+function savevars()
+{
+    setCookie("smallcastleowned", smallcastleowned, 3);
+    setCookie("btallcastleowned", btallcastleowned, 3);
+    setCookie("midcastleowned", midcastleowned, 3);
+    setCookie("tallcastleowned", tallcastleowned, 3);
+    setCookie("flipmidcastleowned", flipmidcastleowned, 3);
+    setCookie("ssmallcastleowned", ssmallcastleowned, 3);
+    setCookie("sbtallcastleowned", sbtallcastleowned, 3);
+    
+    setCookie("lastdragonimgtag", lastdragonimgtag,3);
+    setCookie("dragonname", dragonname,3);
+    setCookie("dragonimgtag", dragonimgtag,3);
+    setCookie("imagenumber", imagenumber,3);
+    
+    setCookie("curhealth", curhealth,3);
+    setCookie("DKPMAX", DKPMAX,3);
+    setCookie("health", health,3);
+    setCookie("tickle", tickle,3);
+    setCookie("DKP",DKP,3);
+
+    setCookie("clickremover", clickremover,3);
+    setCookie("clickbonus", clickbonus,3);
+    setCookie("swordcost", swordcost,3);
+    setCookie("multistrikecost", multistrikecost,3);
+    setCookie("multistrike", multistrike,3);
+    setCookie("goblinwarriorcost", goblinwarriorcost,3);
+    setCookie("totalgoblinmercs", totalgoblinmercs,3);
+    setCookie("amountLoaded", amountLoaded,3);
+    setCookie("totalarcanewizards", totalarcanewizards,3);
+    setCookie("arcanewizardcost", arcanewizardcost,3);
+    setCookie("grimharvestcost", grimharvestcost,3);
+    setCookie("grimharvestmultiplier", grimharvestmultiplier,3);
+    setCookie("DSLAIN", DSLAIN,3);
+    setCookie("goblindamage", goblindamage,3);
+    setCookie("ovrgoblindamage", ovrgoblindamage,3);
+    setCookie("ovrwizarddamge", ovrwizarddamge,3);
+    setCookie("wizarddamage", wizarddamage,3);
+    setCookie("rhealth", rhealth,3);
+    setCookie("broadswordtotal", broadswordtotal,3);
+    setCookie("curtime", curtime,3);
+    setCookie("gold", gold,3);
+    setCookie("btallcastlebonus", btallcastlebonus, 3);
+    setCookie("midcastlebonus", midcastlebonus, 3);
+    var elas=myWatch.getElapsed();
+    setCookie("myWatchhrs", elas.hours,3);
+    setCookie("myWatchmin", elas.minutes,3);
+    setCookie("myWatchsec", elas.seconds,3);
+}
+function autosave()
+{
+    //call savevars on timer
+}
+function loadsave()
+{
+    smallcastleowned=~~getCookie("smallcastleowned");
+    btallcastleowned=~~getCookie("btallcastleowned");
+    midcastleowned=~~getCookie("midcastleowned");
+    tallcastleowned=~~getCookie("tallcastleowned");
+    flipmidcastleowned=~~getCookie("flipmidcastleowned");
+    ssmallcastleowned=~~getCookie("ssmallcastleowned");
+    sbtallcastleowned=~~getCookie("sbtallcastleowned");
+    dragonname=getCookie("dragonname");
+    if(dragonname=="0")
+    {
+        newdragon();
+        curhealth=10;
+        DKPMAX=1;
+        health=10*DKPMAX;
+        tickle=0;
+        DKP=0;
+        clickremover=1;
+        clickbonus=1;
+        sc=0;
+        swordcost=1;
+        multistrikecost=1;
+        multistrike=0;
+        goblinwarriorcost=1;
+        totalgoblinmercs=0;
+        amountLoaded = 0;
+        totalarcanewizards=0;
+        arcanewizardcost=1;
+        grimharvestcost=10;
+        grimharvestmultiplier=1;
+        DSLAIN=0;
+        goblindamage=2;
+        ovrgoblindamage=2;
+        ovrwizarddamge=1;
+        wizarddamage=1;
+        rhealth=10*DKPMAX;
+        broadswordtotal=0;
+        curtime=0;
+        gold=250;
+        c = document.getElementById("myCanvas");
+        sc =document.getElementById("scoreCanvas");
+        talc =document.getElementById("talentCanvas");
+    }
+    else
+    {
+        document.getElementById("dragonname").innerHTML=dragonname;
+        lastdragonimgtag=~~getCookie("lastdragonimgtag");
+        dragonimgtag=~~getCookie("dragonimgtag");
+        imagenumber=~~getCookie("imagenumber");
+        curhealth=~~getCookie("curhealth");
+        DKPMAX=~~getCookie("DKPMAX");
+        health=~~getCookie("health");
+        tickle=~~getCookie("tickle");
+        DKP=~~getCookie("DKP");
+        
+        arcanewizardcost=~~getCookie("arcanewizardcost");
+        goblinwarriorcost=~~getCookie("goblinwarriorcost");
+        clickremover=~~getCookie("clickremover");
+        clickbonus=~~getCookie("clickbonus");
+        sc=~~getCookie("sc");
+        multistrike=~~getCookie("multistrike");
+        totalgoblinmercs=~~getCookie("totalgoblinmercs");
+        amountLoaded=~~getCookie("amountLoaded");
+        totalarcanewizards=~~getCookie("totalarcanewizards");
+        grimharvestmultiplier=~~getCookie("grimharvestmultiplier");
+        DSLAIN=~~getCookie("DSLAIN");
+        goblindamage=~~getCookie("goblindamage");
+        ovrgoblindamage=~~getCookie("ovrgoblindamage");
+        ovrwizarddamge=~~getCookie("ovrwizarddamge");
+        wizarddamage=~~getCookie("wizarddamage");
+        rhealth=~~getCookie("rhealth");
+        broadswordtotal=~~getCookie("broadswordtotal");
+        curtime=~~getCookie("curtime");
+        gold=~~getCookie("gold");
+        midcastlebonus=~~getCookie("midcastlebonus");
+        btallcastlebonus=~~getCookie("btallcastlebonus");
+        
+        var temphr,tempmin,tempsec;
+        temphr=~~getCookie("myWatchhrs");
+        tempmin=~~getCookie("myWatchmin");
+        tempsec=~~getCookie("myWatchsec");
+        myWatch.setElapsed(temphr, tempmin, tempsec);
+        
+        c = document.getElementById("myCanvas");
+        sc =document.getElementById("scoreCanvas");
+        talc =document.getElementById("talentCanvas");
+    }
+}
+function setCookie(c_name,value,exdays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate() + exdays);
+var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+document.cookie=c_name + "=" + c_value;
+}
+function getCookie(c_name)
+{
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1)
+    {
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1)
+    {
+        c_value = 0;
+    }
+    else
+    {
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1)
+        {
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+</script>
+<script>
+newdragon();
+loadsave();
+domydraw(c);
+tick();
+</script>
+
+</body>
+</html>
